@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.liand.cars.ui.view.CarInfoActivity">
+
+        <EditText
+            android:id="@+id/vin_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/example_vin" />
+
+        <Button
+            android:id="@+id/get_car_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_car" />
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingTop="12dp"
+            android:text="@string/error_message"
+            android:textColor="#6D6D6D"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <fragment
+            android:id="@+id/car_info_fragment"
+            android:name="com.liand.cars.ui.view.CarInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_car_info" />
+
+        <fragment
+            android:id="@+id/gasoline_tank_info_fragment"
+            android:name="com.liand.cars.ui.view.TankInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_tank_info" />
+
+        <fragment
+            android:id="@+id/diesel_tank_info_fragment"
+            android:name="com.liand.cars.ui.view.TankInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_tank_info" />
+    </LinearLayout>
+</ScrollView>

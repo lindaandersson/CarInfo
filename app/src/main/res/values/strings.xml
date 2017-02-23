@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Cars</string>
+    <string name="get_car">Get car</string>
+    <string name="example_vin">tmbga61z852094863</string>
+    <string name="volvo">Volvo</string>
+    <string name="ford">Ford</string>
+    <string name="saab">SAAB</string>
+    <string name="rover">Rover</string>
+    <string name="manual_gearbox">Manual</string>
+    <string name="automatic_gearbox">Automatic</string>
+    <string name="diesel">Diesel</string>
+    <string name="gasoline">Gasoline</string>
+    <string name="consumption">Consumption</string>
+    <string name="emission">Emission</string>
+    <string name="consumption_unit">Liters/Meter</string>
+    <string name="emission_unit">Kilograms/Meter</string>
+    <string name="liters">Liters</string>
+    <string name="not_applicable">N/A</string>
+    <string name="reg_number">Registration number</string>
+    <string name="vin_number">Vin number</string>
+    <string name="brand">Brand</string>
+    <string name="year">Year</string>
+    <string name="gearbox">Gearbox</string>
+    <string name="last_updated">Last updated</string>
+    <string name="error_message">Error message</string>
+    <string name="fuel_type">Fuel type</string>
+    <string name="tank_volume">Tank volume</string>
+    <string name="mixed">Mixed</string>
+    <string name="rural">Rural</string>
+    <string name="urban">Urban</string>
+</resources>
