@@ -1,0 +1,30 @@
+{
+  "regno": "wur816",
+  "vin": "tmbga61z852094863",
+  "timestamp": "2015-05-29T12:18:31.390Z",
+  "emission": {
+    "gasoline": {
+      "co2": {
+        "urban": 0.000199,
+        "rural": 0.000158,
+        "mixed": 0.000175
+      }
+    }
+  },
+  "fuel": {
+    "gasoline": {
+      "average_consumption": {
+        "urban": 0.000099,
+        "rural": 0.000058,
+        "mixed": 0.000073
+      }
+    },
+    "tank_volume": 11.0
+  },
+  "gearbox_type": "manual",
+  "year": 2005,
+  "brand": "volvo",
+  "fuel_types": [
+    "gasoline"
+  ]
+}

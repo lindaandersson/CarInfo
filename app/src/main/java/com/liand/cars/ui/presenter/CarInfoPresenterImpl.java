@@ -9,12 +9,20 @@ import com.liand.cars.ui.view.CarInfoView;
 
 public class CarInfoPresenterImpl implements CarInfoPresenter {
     private static final String BASE_URL = "https://gist.githubusercontent.com/sommestad/e38c1acf2aed495edf2d/raw/cdb6dfb85101eedad60853c44266249a3f4ac5df/";
-    private CarInfoView mainView;
+    private CarInfoView carInfoView;
     private Context context;
+    private Car car;
 
-    public CarInfoPresenterImpl(CarInfoView mainView, Context context) {
-        this.mainView = mainView;
+    public CarInfoPresenterImpl() {
+    }
+
+    public CarInfoPresenterImpl(CarInfoView carInfoView, Context context) {
+        this.carInfoView = carInfoView;
         this.context = context;
+    }
+
+    public void setView(CarInfoView view) {
+        carInfoView = view;
     }
 
     @Override
@@ -23,7 +31,7 @@ public class CarInfoPresenterImpl implements CarInfoPresenter {
 
     @Override
     public void onDestroy() {
-        mainView = null;
+        carInfoView = null;
     }
 
     @Override
@@ -34,11 +42,16 @@ public class CarInfoPresenterImpl implements CarInfoPresenter {
 
     @Override
     public void setCar(Car car) {
-        mainView.displayCar(car);
+        this.car = car;
+        carInfoView.displayCar(car);
+    }
+
+    public Car getCar() {
+        return car;
     }
 
     @Override
     public void setErrorMessage(String errorMessage) {
-        mainView.displayErrorMessage(errorMessage);
+        carInfoView.displayErrorMessage(errorMessage);
     }
 }

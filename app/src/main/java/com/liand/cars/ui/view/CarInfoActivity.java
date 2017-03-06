@@ -49,6 +49,10 @@ public class CarInfoActivity extends AppCompatActivity implements CarInfoView {
         presenter = new CarInfoPresenterImpl(this, this);
     }
 
+    public void setPresenter(CarInfoPresenter presenter){
+        this.presenter = presenter;
+    }
+
     @OnClick(R.id.get_car_button)
     public void onGetCarClick() {
         String vin = vinEditText.getText().toString();
